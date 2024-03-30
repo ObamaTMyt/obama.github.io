@@ -1,0 +1,25 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    background-color: black; 
+    transition: background-color 0.5s ease; 
+}
+
+
+
+.videos {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity:  0.5;
+    object-fit: cover;
+}
+
+.videos video {
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(8px);
+}
