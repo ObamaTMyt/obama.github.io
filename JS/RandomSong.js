@@ -14,6 +14,5 @@ window.onload = function () {
     
     var randomIndex = Math.floor(Math.random() * songs.length);
     var videoElement = document.getElementById('videos');
-    videoElement.removeAttribute("autoplay"); // Remove autoplay attribute
     videoElement.src = songs[randomIndex];
 };
