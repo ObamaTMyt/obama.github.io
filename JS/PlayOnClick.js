@@ -10,15 +10,9 @@ function toggleVideo() {
         video.play();
     }
 
-    if (typeof playSong === "function") {
-        playSong();
-    }
-
     var profile = document.querySelector(".profile");
     var socialLinks = document.querySelector(".social-links");
 
-    profile.style.display = profile.style.display = "block";
-    socialLinks.style.display = socialLinks.style.display = "flex";
-
-  
+    profile.style.display = "block";
+    socialLinks.style.display = "flex";
 }
