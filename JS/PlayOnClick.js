@@ -1,8 +1,17 @@
+$(window).on('load', function () {
+    $("#loader").fadeOut("slow", function () {
+        $("#startScreen").fadeOut("slow");
+    });
+});
+
+
+
 var videoStarted = false; 
 
 function toggleVideo() {
     var startScreen = document.getElementById("startScreen");
-    startScreen.style.display = "none";
+    startScreen.style.opacity = "0"; 
+    startScreen.style.pointerEvents = "none"; 
 
     var videoContainer = document.getElementById("video-container");
     var video = document.getElementById("videos");
@@ -11,21 +20,15 @@ function toggleVideo() {
     if (!videoStarted) {
         if (video.paused) {
             video.play();
-            videoStarted = true; 
+            videoStarted = true;
         }
-    }
-
-    if (typeof playSong === "function") {
-        playSong();
     }
 
     var profile = document.querySelector(".profile");
     var socialLinks = document.querySelector(".social-links");
 
-    profile.style.display = profile.style.display = "block";
-    socialLinks.style.display = socialLinks.style.display = "flex";
-
-  
+    profile.style.display = "block";
+    socialLinks.style.display = "flex";
 }
 
 window.onload = function () {

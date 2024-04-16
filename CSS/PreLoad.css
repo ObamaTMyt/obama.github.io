@@ -8,8 +8,11 @@ html {
     tab-size: 4;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-feature-settings: normal;
-    font-variation-settings: normal
+    font-variation-settings: normal;
+
 }
+
+
 
 main {
     margin-top: 10%;
@@ -24,8 +27,10 @@ main {
     background-color: black;
     z-index: 9999;
     display: block;
-
+    opacity: 1;
+    transition: opacity 5s ease; 
 }
+
 
 .videos {
     display: none;
