@@ -11,13 +11,8 @@ window.onload = function () {
         "Songs/Stand.mp4",
         "Songs/Decible.mp4",
     ];
-
+    
     var randomIndex = Math.floor(Math.random() * songs.length);
     var videoElement = document.getElementById('videos');
     videoElement.src = songs[randomIndex];
-
-    document.getElementById("playButton").addEventListener("click", function() {
-        toggleVideo(); 
-        videoElement.play(); 
-    });
 };

@@ -3,12 +3,22 @@ function toggleVideo() {
     startScreen.style.display = "none";
 
     var videoContainer = document.getElementById("video-container");
+    var video = document.getElementById("videos");
+    videoContainer.style.display = "block";
+
+    if (video.paused) {
+        video.play();
+    }
+
+    if (typeof playSong === "function") {
+        playSong();
+    }
+
     var profile = document.querySelector(".profile");
     var socialLinks = document.querySelector(".social-links");
 
-    videoContainer.style.display = "block";
-    profile.style.display = "block";
-    socialLinks.style.display = "flex";
+    profile.style.display = profile.style.display = "block";
+    socialLinks.style.display = socialLinks.style.display = "flex";
 
     document.addEventListener('contextmenu', function (event) {
         event.preventDefault();
