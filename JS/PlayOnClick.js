@@ -19,4 +19,8 @@ function toggleVideo() {
 
     profile.style.display = profile.style.display = "block";
     socialLinks.style.display = socialLinks.style.display = "flex";
+
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+    });
 }
