@@ -6,8 +6,6 @@ function toggleVideo() {
     var video = document.getElementById("videos");
     videoContainer.style.display = "block";
 
-    
-
     if (video.paused) {
         video.play();
     }
@@ -19,6 +17,8 @@ function toggleVideo() {
     var profile = document.querySelector(".profile");
     var socialLinks = document.querySelector(".social-links");
 
-    profile.style.display = "block";
-    socialLinks.style.display = "flex";
+    profile.style.display = profile.style.display = "block";
+    socialLinks.style.display = socialLinks.style.display = "flex";
+
+  
 }
