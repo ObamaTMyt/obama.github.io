@@ -17,10 +17,6 @@ function toggleVideo() {
     var profile = document.querySelector(".profile");
     var socialLinks = document.querySelector(".social-links");
 
-    profile.style.display = profile.style.display = "block";
-    socialLinks.style.display = socialLinks.style.display = "flex";
-
-    document.addEventListener('contextmenu', function (event) {
-        event.preventDefault();
-    });
+    profile.style.display = "block";
+    socialLinks.style.display = "flex";
 }
