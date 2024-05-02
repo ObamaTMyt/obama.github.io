@@ -120,19 +120,22 @@ main {
 }
 
 .social-links .font-semibold {
-
     color: rgb(142, 142, 142);
     position: absolute;
-    bottom: -30px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.5s, bottom 0.5s;
-
 }
+
 
 .social-links li:hover .font-semibold {
     opacity: 1;
     bottom: -30px;
 }
 
+
+.social-links li.twitter {
+    margin-top: 10px; 
+}
