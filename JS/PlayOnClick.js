@@ -42,7 +42,6 @@ window.onload = function () {
         "Songs/Himmlen.mp4",
         "Songs/Vi.mp4",
         "Songs/Stand.mp4",
-        "Songs/Decible.mp4",
     ];
     
     var randomIndex = Math.floor(Math.random() * songs.length);
