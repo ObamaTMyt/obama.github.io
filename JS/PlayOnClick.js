@@ -33,15 +33,11 @@ function toggleVideo() {
 
 window.onload = function () {
     var songs = [
-        "Songs/göre.mp4",
-        "Songs/Stockholm.mp4",
-        "Songs/Maladin.mp4",
-        "Songs/Air.mp4",
-        "Songs/Catwalk.mp4",
-        "Songs/Himmlen.mp4",
-        "Songs/Vi.mp4",
-        "Songs/Upside.mp4",
-        "Songs/Cobra.mp4",
+        "Songs/Dag.mp4",
+        "Songs/Gurl.mp4",
+        "Songs/Money.mp4",
+        "Songs/Russ.mp4",
+       
     ];
     
     var randomIndex = Math.floor(Math.random() * songs.length);
