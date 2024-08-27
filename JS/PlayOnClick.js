@@ -6,12 +6,12 @@ $(window).on('load', function () {
 
 
 
-var videoStarted = false; 
+var videoStarted = false;
 
 function toggleVideo() {
     var startScreen = document.getElementById("startScreen");
-    startScreen.style.opacity = "0"; 
-    startScreen.style.pointerEvents = "none"; 
+    startScreen.style.opacity = "0";
+    startScreen.style.pointerEvents = "none";
 
     var videoContainer = document.getElementById("video-container");
     var video = document.getElementById("videos");
@@ -37,9 +37,15 @@ window.onload = function () {
         "Songs/Gurl.mp4",
         "Songs/Money.mp4",
         "Songs/Russ.mp4",
-       
+        "Songs/Lava.mp4",
+        "Songs/Miss.mp4",
+        "Songs/Hem.mp4",
+        "Songs/12.mp4",
+        "Songs/Beng.mp4",
+
     ];
-    
+
+
     var randomIndex = Math.floor(Math.random() * songs.length);
     var videoElement = document.getElementById('videos');
     videoElement.src = songs[randomIndex];
